@@ -1,0 +1,107 @@
+.tieu-de {
+    text-align: center;
+    font-size: 25px;
+}
+span.the-tieu-de {   
+    color: #16a085;
+}
+li.price {
+    display: inline-block;
+}
+span.number {
+    font-size: 25px;
+    color: #e84118;
+}
+.current {
+    padding-left: 90px;
+    margin-top: -40px;
+    color:#2d3436
+}
+span.sale {
+    font-size: 23px;
+    color: blue;
+}
+.discount_rate {
+    padding-left: 34px;
+    margin-top: -40px;
+    color:#00b894
+}
+#list_price{
+    font-size:18px;
+    
+}
+div#current_list {
+    padding-left: 60px;
+}
+img.card-img-top {
+    margin-top: 30px;
+}
+.card-body {
+    margin-bottom: 30px;
+}
+
+h5.price-text-color {
+    font-size: 24px;
+    font-weight: bold;
+}
+li.nav-item span {
+    color: red;
+    padding-left: 15px;
+    font-size: 18px;
+}
+nav.navbar.bg-light {
+    margin-top: -32px;
+}
+.header .navbar {
+    padding: 0;
+    height: 100%;
+    max-height: 460px;
+    overflow: hidden;
+    background: #ffffff !important;
+}
+a.nav-link {
+    margin-top: -5px;
+    margin-bottom: -4px;
+}
+.nav {
+    height: 50px;
+}
+nav.navbar.navbar-expand-md.bg-dark.navbar-dark {
+    max-height: 40px;
+}
+.brand {
+    position: relative;
+    margin-bottom: 0px;
+    padding: 30px 0;
+    background: #ffffff;
+    margin-top: -61px;
+}
+.header .navbar-nav {
+    width: 100%;
+    padding: 15px 0;
+    height: 100%;
+}
+.error {
+    padding-left: 219px;
+    font-size: 30px;
+    margin-right: -306px;
+}
+.back_home {
+    font-size: 30px;
+    padding-top: 49px;
+}
+.nav-item.dropdown {
+    padding-left: 30px;
+    color: blue;
+}
+a.nav-link.dropdown-toggle {
+    color: blue;
+}
+
+
+a.nav-link.menu {
+    padding-left: -10px;
+    margin-left: -5px;
+    color: blue;
+    padding-bottom: 10px;
+}

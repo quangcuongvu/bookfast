@@ -1,0 +1,14 @@
+.nav-item.dropdown {
+    padding-left: 30px;
+    color: blue;
+}
+a.nav-link.dropdown-toggle {
+    color: blue;
+}
+
+a.nav-link.menu {
+    padding-left: -10px;
+    margin-left: -32px;
+    color: blue;
+    padding-bottom: 10px;
+}

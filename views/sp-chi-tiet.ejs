@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Pustok - Book Store HTML Template</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Use Minified Plugins Version For Fast Page Load -->
+	<link rel="stylesheet" type="text/css" media="screen" href="/stylesheets/plugins.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="/stylesheets/main.css" />
+	<link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Source+Code+Pro:700,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    <!-- CSS lib/raries -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/lib//slick/slick.css" rel="stylesheet">
+    <link href="/lib//slick/slick-theme.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="/stylesheets/style.css" rel="stylesheet">
+    <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- theme item shop -->
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <link href="/stylesheets/itemshop.css" rel="stylesheet">
+    <link href="/stylesheets/2.css" rel="stylesheet">
+
+    <!-- font google -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+     <!-- Top bar Start -->
+     <div class="top-bar">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-6">
+                    <i class="fa fa-envelope"></i>
+                    quangcuong.vu.98@gmail.com
+                </div>
+                <div class="col-sm-6">
+                    <i class="fa fa-phone-alt"></i>
+                    +84354449090
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Top bar End -->
+    
+    <!-- Nav Bar Start -->
+    <div class="nav"> 
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+                <a href="#" class="navbar-brand">MENU</a>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                    <div class="navbar-nav mr-auto">
+                        <a href="/" class="nav-item nav-link active">Home</a>
+                        <a href="/" class="nav-item nav-link ">Tiki</a>
+                        <a href="/" class="nav-item nav-link ">Fahasa</a>
+                        <a href="/" class="nav-item nav-link ">lazada</a>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">More Pages</a>
+                            <div class="dropdown-menu">
+                                <a href="#" class="dropdown-item">Contact Us</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="navbar-nav ml-auto">
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">User Account</a>
+                            <div class="dropdown-menu">
+                                <a href="#" class="dropdown-item">Login</a>
+                                <a href="#" class="dropdown-item">Register</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- Nav Bar End -->      
+    
+    <!-- Bottom Bar Start -->
+    <div class="bottom-bar">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-md-3">
+                    <div class="logo"  style="margin-left: 40px;">
+                        <a href="/">
+                            <img src="/images/logo.png"  width="200px" height="150px" alt="Logo">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="search">
+                        <form method="GET" action="/search/">
+                            <div class="tt-col">
+                                <input type="text" class="tt-search-input" placeholder="Search" name="searchText">
+                                <button class="tt-btn-search" type="submit"></button>
+                            
+                            </div>
+                            <button><i class="fa fa-search"></i></button>   
+                        </form>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+	<div class="site-wrapper" id="top">
+		
+		
+		<div class="product_detail">
+            <div class="product-detail">
+                
+                <ul>
+                    <li class="name"><a class='link' href="/">Trang chủ</a></li>
+                    <li class="angle-right"> <i class="fa fa-angle-right" aria-hidden="true"></i></li>
+                    <li class="name"><a class='link' href="/"><%=data.source%></a></li>
+                    <li class="angle-right"> <i class="fa fa-angle-right" aria-hidden="true"></i></li>
+                    <li class="name"><a class='link' href="/"><%=data.category%></a></li>
+                </ul>
+
+            </div>
+        </div>
+		<main class="inner-page-sec-padding-bottom">
+			<div class="container">
+				<div class="shop-product-wrap list with-pagination row space-db--30 shop-border">
+					<div class="col-lg-4 col-sm-6">
+						<div class="product-card card-style-list">
+							
+							<div class="product-list-content">
+								<div class="card-image">
+									<img src="<%=data.img_book%>" alt="<%=data.name_book%>">
+								</div>
+								<div class="product-card--body">
+									<div class="product-header">
+                                        
+                                        <a href="/author/<%=data.author_unicode%>.<%=data.id_author%>.html" class="author">
+                                            <%=data.name_author%>
+                                        </a>
+                                        
+										<h3><a href="<%=data.link_book%>" tabindex="0"><%=data.name_book%></a></h3>
+									</div>
+									<div class="price-block">
+										<span class="price "><span class="number"><%=data.price_book%></span>₫</span>
+										<del class="price-old ">
+                                            <span class='number list_price'><%=data.list_price%></span>₫
+                                    </del>
+                                        
+										<span class="price-discount"><%=data.discount_rate%>%</span>
+									</div>
+                                    <div class="description">
+                                        <span><%-data.description%></span>
+                                    </div>
+									
+									<div class="rating-block">
+										<span class="fas fa-star star_on"></span>
+										<span class="fas fa-star star_on"></span>
+										<span class="fas fa-star star_on"></span>
+										<span class="fas fa-star star_on"></span>
+										<span class="fas fa-star "></span>
+									</div>
+									<div class="btn-block">
+										<a href="<%=data.link_book%>" class="btn btn-outlined">Mua Ngay</a>
+										<a href="/search/?searchText=<%=data.name_unicode%>" class="card-link"><i class="fa fa-search" aria-hidden="true"></i> So Sánh Giá</a>
+										<a href="/category/<%=data.category_unicode%>.html" class="card-link"><i class="fa fa-list-ul" aria-hidden="true"></i> <%=data.category%></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+				
+				
+			</div>
+		</main>
+	</div>
+    <div class="footer-bottom">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 copyright">
+                    <p>Copyright <i class="fa fa-github" aria-hidden="true"></i>&nbsp; &nbsp; <a href="https://github.com/quangcuongvu" ></i>&nbsp; &nbsp; <span style="color: yellow;">Vũ Quang Cường</span></a></p>
+                </div>
+    
+                <div class="col-md-6 template-by">
+                    <span style="color:white"><b>Khoá Luận Tốt Nghiệp 2021.</b></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer Bottom End -->       
+    
+    <!-- Back to Top -->
+    <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+    <script>
+        let x = document.querySelectorAll(".number");
+        for (let i = 0, len = x.length; i < len; i++) {
+            let num = Number(x[i].innerHTML)
+                      .toLocaleString('vi');
+            x[i].innerHTML = num;
+            
+        }
+    </script> 
+    
+    <!-- JavaScript lib/raries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="/lib/easing/easing.min.js"></script>
+    <script src="/lib/slick/slick.min.js"></script>
+    
+    <!-- Template Javascript -->
+    <script src="/javascripts/main.js"></script>
+
+	
+	<!-- Use Minified Plugins Version For Fast Page Load -->
+	<script src="/javasripts/plugins.js"></script>
+	<script src="/javasripts/ajax-mail.js"></script>
+	<script src="/javasripts/custom.js"></script>
+</body>
+
+</html>
