@@ -29,6 +29,7 @@
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
     <link href="/stylesheets/itemshop.css" rel="stylesheet">
     <link href="/stylesheets/1.css" rel="stylesheet">
+    <link href="/stylesheets/6.css" rel="stylesheet">
 
     <!-- font google -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -130,25 +131,28 @@
                         <ul class="navbar-nav" >
 
                             <li class="nav-item">
-                                <span>Tác giả nổi bật</span>
+                                <span style="color: red;
+                                padding-left: 15px;
+                                font-size: 26px;">Tác giả nổi bật</span>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="/author/nhieu-tac-gia.html"><i class="fa fa-square-o" aria-hidden="true"></i>Nhiều tác giả</a>
+                                <a class="nav-link" href="http://localhost:3000/author/nhieu-tac-gia.html"><i class="fa fa-square-o" aria-hidden="true"></i>Nhiều Tác Giả</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="/author/nguyen-nhat-anh.html"><i class="fa fa-square-o" aria-hidden="true"></i>Nguyễn Nhật Ánh</a>
+                                <a class="nav-link" href="http://localhost:3000/author/ngo-tat-to.html"><i class="fa fa-square-o" aria-hidden="true"></i>Ngô Tất Tố</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="/author/ngo-thua-an.html"><i class="fa fa-square-o" aria-hidden="true"></i>Ngô Thừa Ân</a>
+                                <a class="nav-link" href="http://localhost:3000/author/nam-cao.html"><i class="fa fa-square-o" aria-hidden="true"></i>Nam Cao</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="http://localhost:3000/author/edmondo-de-amicis.html"><i class="fa fa-square-o" aria-hidden="true"></i>Michiko Nakagawa </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="/author/higashino-keigo.html.html"><i class="fa fa-square-o" aria-hidden="true"></i>Higashino Keigo</a>
+                                <a class="nav-link" href="http://localhost:3000/author/nguyen-hong.html"><i class="fa fa-square-o" aria-hidden="true"></i>Nguyên Hồng</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="/author/nguyen-hong.html"><i class="fa fa-square-o" aria-hidden="true"></i>Nguyên Hồng</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/author/nhieu-tac-gia.html"><p style="color:blue"><i class="fa fa-plus" aria-hidden="true"></i>Xem Thêm</p></a>
+                                <a class="nav-link" href="http://localhost:3000/author/hector-malot.html"><p style="color:blue"><i class="fa fa-square-o" aria-hidden="true"></i>Hector Malot</p></a>
                             </li>
 
                         </ul>
@@ -156,56 +160,112 @@
                 </div>
                 <div class="col-md-8">
                     
-                        <div class="row">
-                            <%if(data.length==0){%>
-                                <div class='error'>
-                                    Sản phẩm không tồn tại
+                    <div class="row">
+                        <%data.forEach(function(motphantu){%>
+                        <%price_tiki=motphantu.price_book%>
+                        <%list_price_tiki=motphantu.list_price%>
+                        <%discount_tiki=motphantu.discount_rate%>
+                
+                        <%price_fahasa =motphantu.list_produce_fahasa[0].price_book%>
+                        <%list_price_fahasa=motphantu.list_produce_fahasa[0].list_price%>
+                        <%discount_fahasa=motphantu.list_produce_fahasa[0].discount_rate%>
+                
+                        <%price_lazada =motphantu.list_produce_lazada[0].price_book%>
+                        <%list_price_lazada=motphantu.list_produce_lazada[0].list_price%>
+                        <%discount_lazada=motphantu.list_produce_lazada[0].discount_rate%>
+                        
+                        
+                        <div class="col-xs-12 col-sm-6 col-md-3">
+                            <div class="col-item">
+                                <div class="post-img-content">
+                                    <img src="<%=motphantu.img_book%>" class="img-responsive" />
+                                    <% if(price_tiki <price_fahasa && price_tiki<price_lazada) {%>
+                                        <span class="round-tag">-<%=discount_tiki%>%</span>
+                                    <%}%>
+                                    <% if(price_fahasa <price_tiki && price_fahasa<price_lazada) {%>
+                                        <span class="round-tag">-<%=discount_fahasa%>%</span>
+                                    <%}%>
+                                    <% if(price_lazada <price_fahasa && price_lazada<price_tiki) {%>
+                                        <span class="round-tag">-<%=discount_lazada%>%</span>
+                                    <%}%>
                                 </div>
-                                <div class='back_home'>
-                                    <a href="/">Mời quay về trang chủ</a>
-                                </div>
-                            <%}%>
-                            <%data.forEach(function(motphantu){%>
-                                <div class="col-xs-12 col-sm-6 col-md-3">
-                                    <div class="col-item">
-                                        <div class="post-img-content">
-                                            <img src="<%=motphantu.img_book%>" class="img-responsive" />
-                                            <span class="round-tag">-<%=motphantu.discount_rate%>%</span>
-                                        </div>
-                                        <div class="info">
-                                            <div class="name">
-                                                <a href="/chi-tiet/<%=motphantu.name_unicode%>.<%=motphantu.id_book%>.html"><span><%=motphantu.name_book%></span>
-                                                </a>
+                                <div class="info">
+                                    <div class="name">
+                                        <a href="/chi-tiet/<%=motphantu.name_unicode%>.<%=motphantu.id_book%>.html"><span><%=motphantu.name_book%></span>
+                                        </a>
+                                    </div>
+                                    <% if(price_tiki <=price_fahasa && price_tiki <=price_lazada) {%>
+                                        <div class="row">
+                                            <div class="price col-md-6">
+                                                <h5 class="price-text-color "><span class='number'><%=price_tiki%></span>₫</h5>
                                             </div>
-                                            <div class="row">
-                                                <div class="price col-md-6">
-                                                    <h5 class="price-text-color "><span
-                                                            class='number'><%=motphantu.price_book%></span>₫</h5>
-                                                </div>
-
+                                            <div class="price col-md-6">
+                                                <span class="list-price-text"><span
+                                                        class='number text'><%=list_price_tiki%></span>₫</span>
                                             </div>
                                             <div class="separator clear-left">
                                                 <p class="btn-add">
-                                                    <i class="fa fa-shopping-cart"></i><a
-                                                        href="/chi-tiet/<%=motphantu.name_unicode%>.<%=motphantu.id_book%>.html"
-                                                        class="hidden-sm">Add to cart</a>
+                                                    <img src="https://img.websosanh.vn/v2/users/logo/images/53mjoSwxCgpn.jpg?compress=85&width=50&height=30"
+                                                        alt="Tiki">
                                                 </p>
                                                 <p class="btn-details">
-                                                    <i class="fa fa-list"></i><a
-                                                        href="/category/<%=motphantu.category_unicode%>.html"
+                                                    <a href="/category/<%=motphantu.category_unicode%>.<%=motphantu.cat_id%>.html"
                                                         class="hidden-sm"><%=motphantu.category%></a>
                                                 </p>
                                             </div>
-                                            <div class="clearfix">
+                                        </div>
+                                    <%}%>
+                                    <% if(price_fahasa <price_tiki && price_fahasa <price_lazada) {%>
+                                        <div class="row">
+                                            <div class="price col-md-6">
+                                                <h5 class="price-text-color "><span class='number'><%=price_fahasa%></span>₫</h5>
+                                            </div>
+                                            <div class="price col-md-6">
+                                                <span class="list-price-text"><span
+                                                        class='number text'><%=list_price_fahasa%></span>₫</span>
+                                            </div>
+                                            <div class="separator clear-left">
+                                                <p class="btn-add">
+                                                    <img src="https://jobseekers.vn/wp-content/uploads/2019/05/Quy-Chuan-Logo.png"lt="fahasa" class='img_fahasa'>
+                                                </p>
+                                                <p class="btn-details">
+                                                    <a href="/category/<%=motphantu.category_unicode%>.<%=motphantu.cat_id%>.html"
+                                                        class="hidden-sm"><%=motphantu.category%></a>
+                                                </p>
                                             </div>
                                         </div>
-                                    </div>
+                                    <%}%>
+                                    <% if(price_lazada <price_tiki && price_lazada <price_fahasa) {%>
+                                        <div class="row">
+                                            <div class="price col-md-6">
+                                                <h5 class="price-text-color "><span class='number'><%=price_lazada%></span>₫</h5>
+                                            </div>
+                                            <div class="price col-md-6">
+                                                <span class="list-price-text"><span
+                                                        class='number text'><%=list_price_lazada%></span>₫</span>
+                                            </div>
+                                            <div class="separator clear-left">
+                                                <p class="btn-add">
+                                                    <img src="/images/lazada.png"lt="lazada" class='img_lazada'>
+                                                </p>
+                                                <p class="btn-details">
+                                                    <a href="/category/<%=motphantu.category_unicode%>.<%=motphantu.cat_id%>.html"
+                                                        class="hidden-sm"><%=motphantu.category%></a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    <%}%>
+                
+                                   
+                
                                 </div>
-                            <%})%> 
+                            </div>
                         </div>
+                        <%})%>
+                    </div>
                         <%if(data.length!=0){%>
                             <nav aria-label="Page navigation example" class='padding'>
-                                <ul class="pagination" style="padding-left: 303px;margin-top: -27px;">
+                                <ul class="pagination" style="padding-left: 400px;margin-top: -27px;">
                                     <%if (currentpage==1) {%>
                                     <li class="page-item disabled"><a class="page-link" href="#" tabindex="-1">Previous</a></li>
                                     <li class="page-item  active "><a class="page-link" href="?page=1"> 1</a></li>
@@ -260,10 +320,10 @@
                                     <li class="page-item "><a class="page-link" href="#">...</a></li>
                                     <%}%>
                             
-                                    <%if (currentpage < max_page-2 ) {%>
+                                    <%if (currentpage < max_page-2 &&max_page>5) {%>
                                     <li class="page-item "><a class="page-link" href="?page=<%=max_page-1%>"> <%=max_page-1%></a></li>
                                     <%}%>
-                                    <%if (currentpage < max_page-1 ) {%>
+                                    <%if (currentpage < max_page-1 &&max_page>5 ) {%>
                         
                                     <li class="page-item "><a class="page-link" href="?page=<%=max_page%>"> <%=max_page%></a></li>
                                     <%}%>

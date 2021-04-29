@@ -105,3 +105,76 @@ a.nav-link.menu {
     color: blue;
     padding-bottom: 10px;
 }
+span.number.text {
+    font-size: 15px;
+    text-decoration-line: line-through;
+}
+span.list-price-text {
+    color: green;
+}
+.col-item .price {
+    /* width: 50%; */
+    float: left;
+    margin-top: 5px;
+    margin-bottom: 3px;
+}
+.col-item .separator {
+    /* padding-top: 0px; */
+    border-top: 3px solid #b2bec3;
+    width: 254px;
+    margin-left: 5px;
+}
+.name span {
+    text-align: justify;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    color: #16a085;
+    font-weight: bold;
+    font-size: 16px;
+}
+.col-item .price h5 {
+    line-height: 20px;
+    margin: 0;
+    padding-left: 17px;
+    padding-bottom: 3px;
+}
+
+img.img_fahasa {
+    width: 90px;
+}
+img.img_lazada {
+    width: 60px;
+}
+.separator.clear-left.bar {
+    border-top: 3px solid #b2bec3;
+    width: 220px;
+    margin-left: -10px;
+}
+span.list-price-text {
+    color: #219FD1;
+    padding-right: 28px;
+    padding-left: 22px;
+}
+.name span {
+    text-align: justify;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    color: #16a085;
+    font-weight: bold;
+    font-size: 16px;
+    padding-top: 10px;
+}
+.loisp {
+    font-size: 40px;
+    padding-top: 50px;
+    padding-left: 300px;
+    text-align: center;
+    padding-bottom: 390px;
+    color: #2c3e50;
+}

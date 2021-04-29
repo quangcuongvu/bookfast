@@ -1,0 +1,9 @@
+li.nav-item span {
+    color: red;
+    padding-left: 15px;
+    font-size: 24px;
+}
+.header .navbar a {
+    color: #353535;
+    font-size: 20px;
+}

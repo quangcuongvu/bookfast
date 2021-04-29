@@ -1,52 +1,164 @@
-<% include theme/header %>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title><%=title%></title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="eCommerce HTML Template Free Download" name="keywords">
+        <meta content="eCommerce HTML Template Free Download" name="description">
+
+        <!-- Favicon -->
+        <link href="/images/favicon.ico" rel="icon">
+
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Source+Code+Pro:700,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+        <!-- CSS lib/raries -->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+        <link href="/lib//slick/slick.css" rel="stylesheet">
+        <link href="/lib//slick/slick-theme.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="/stylesheets/style.css" rel="stylesheet">
+        <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- theme item shop -->
+        <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+        <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+        <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+        <link href="/stylesheets/itemshop.css" rel="stylesheet">
+        <link href="/stylesheets/1.css" rel="stylesheet">
+        <link href="/stylesheets/5.css" rel="stylesheet">
+
+        <!-- font google -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+        
+        
+    </head>
+
+    <body>
+        <!-- Top bar Start -->
+        <div class="top-bar">
+            <div class="container-fluid mau">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <i class="fa fa-envelope"></i>
+                        quangcuong.vu.98@gmail.com
+                    </div>
+                    <div class="col-sm-6">
+                        <i class="fa fa-phone-alt"></i>
+                        +84354449090
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Top bar End -->
+        
+        <!-- Nav Bar Start -->
+        <div class="nav"> 
+            <div class="container-fluid">
+                <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+                    <a href="#" class="navbar-brand">MENU</a>
+                    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                        <div class="navbar-nav mr-auto">
+                            <a href="/" class="nav-item nav-link active">Home</a>
+                            <div class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Contact Us</a>
+                                
+                            </div>
+                        </div>
+                        
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!-- Nav Bar End -->      
+        
+        <!-- Bottom Bar Start -->
+        <div class="bottom-bar">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col-md-3">
+                        <div class="logo"  style="margin-left: 40px;">
+                            <a href="/">
+                                <img src="/images/logo.png"  width="200px" height="150px" alt="Logo">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="search">
+                            <form method="GET" action="/search/">
+                                <div class="tt-col">
+                                    <input type="text" class="tt-search-input" placeholder="Search" name="searchText">
+                                    <button class="tt-btn-search" type="submit"></button>
+                                
+                                </div>
+                                <button><i class="fa fa-search"></i></button>   
+                            </form>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <!-- Bottom Bar End -->     
+                
 <!-- Main Slider Start -->
 <div class="header">
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-3">
                 <nav class="navbar bg-light">
-                    <ul class="navbar-nav" >
-                       
+                    <ul class="navbar-nav">
+
                         <li class="nav-item">
                             <span>Thể loại sách nổi bật</span>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/category/sach-van-hoc.839.html"><i class="fa fa-book" aria-hidden="true"></i>Sách Văn học</a>
+                            <a class="nav-link" href="/category/sach-van-hoc.839.html"><i class="fa fa-book"
+                                    aria-hidden="true"></i>Sách Văn học</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/category/sach-ky-nang-song.870.html"><i class="fa fa-spinner" aria-hidden="true"></i>Sách kĩ năng sống</a>
+                            <a class="nav-link" href="/category/sach-ky-nang-song.870.html"><i class="fa fa-spinner"
+                                    aria-hidden="true"></i>Sách kĩ năng sống</a>
                         </li>
-                    
+
                         <li class="nav-item">
-                            <a class="nav-link" href="/category/sach-kinh-te.846.html"><i class="fa fa-chrome" aria-hidden="true"></i>Sách kinh tế</a>
+                            <a class="nav-link" href="/category/sach-kinh-te.846.html"><i class="fa fa-chrome"
+                                    aria-hidden="true"></i>Sách kinh tế</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/category/sach-ba-me-em-be.2527.html"><i class="fa fa-file-text-o" aria-hidden="true"></i>Sách Bà Mẹ Em Bé</a>
-                        </li>
-                        <!-- <li class="nav-item">
-                            <a class="nav-link" href="/category/sach-hoc-ngoai-ngu.887.html"><p style="color:blue"><i class="fa fa-plus" aria-hidden="true"></i>Xem Thêm</p></a>
-                        </li> -->
+                        
                         <div class="navbar-nav ml-auto">
                             <div class="nav-item dropdown ">
-                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown"><i class="fa fa-square-o" aria-hidden="true"></i>Xem Thêm</a>
-                                
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown"><i
+                                        class="fa fa-square-o" aria-hidden="true"></i>Xem Thêm</a>
+
                                 <div class="dropdown-menu">
                                     <li class="nav-item">
-                                        <a class="nav-link menu" href="/category/sach-hoc-ngoai-ngu.887.html">Sách Học Ngoại Ngữ</a>
+                                        <a class="nav-link menu" href="/category/sach-thieu-nhi.393.html">Sách thiếu nhi</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link menu" href="/category/tap-chi-catalogue.1468.html">Sách tạp Chí</a>
+                                        <a class="nav-link menu" href="/category/sach-ba-me-em-be.2527.html">Sách bà mẹ em bé</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link menu" href="/category/children's-books.7.html">children's-books</a>
+                                        <a class="nav-link menu"
+                                            href="/category/sach-tham-khao.2320.html">Sách tham khảo</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link menu" href="/category/how-to-self-help.614.html">How-to - Self Help</a>
+                                        <a class="nav-link menu"
+                                            href="/category/sach-kien-thuc-tong-hop.873.html">Kiến thức tổng hợp</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link menu" href="/category/education-teaching.5308.html">Education</a>
+                                        <a class="nav-link menu" href="http://localhost:3000/category/sach-tam-ly-gioi-tinh.862.html">Tâm lý giới tính</a>
                                     </li>
                                     
+
                                 </div>
                             </div>
                         </div>
@@ -54,86 +166,91 @@
                             <span>Tác giả nổi bật</span>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/author/nhieu-tac-gia.4043.html"><i class="fa fa-square-o" aria-hidden="true"></i>Nhiều tác giả</a>
+                            <a class="nav-link" href="http://localhost:3000/author/nhieu-tac-gia.1001.html"><i class="fa fa-square-o"
+                                    aria-hidden="true"></i>Nhiều tác giả</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/author/nguyen-nhat-anh.4107.html"><i class="fa fa-square-o" aria-hidden="true"></i>Nguyễn Nhật Ánh</a>
+                            <a class="nav-link" href="/author/hector-malot.9345.html"><i class="fa fa-square-o"
+                                    aria-hidden="true"></i>Hector Malot</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/author/ngo-thua-an.6801.html"><i class="fa fa-square-o" aria-hidden="true"></i>Ngô Thừa Ân</a>
+                            <a class="nav-link" href="/author/ngo-thua-an.6801.html"><i class="fa fa-square-o"
+                                    aria-hidden="true"></i>Ngô Thừa Ân</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/author/nhieu-tac-gia.1001.html"><p style="color:blue"><i class="fa fa-plus" aria-hidden="true"></i>Xem Thêm</p></a>
+                            <a class="nav-link" href="/author/nhieu-tac-gia.1001.html">
+                                <p style="color:blue"><i class="fa fa-plus" aria-hidden="true"></i>Xem Thêm</p>
+                            </a>
                         </li>
-                        
-                        
-                        
-                        
+
+
+
+
                     </ul>
                 </nav>
             </div>
             <div class="col-md-6">
                 <div class="header-slider normal-slider">
                     <div class="header-slider-item">
-                        <a href="http://localhost:3000/chi-tiet/danh-tac-viet-nam-giong-to.514464.html"><img src="https://i.imgur.com/kbhGFRL.jpg"  width="100%" height="400px" alt="Slider Image" /></a>
+                        <a href="http://localhost:3000/chi-tiet/tat-den.55605172.html"><img
+                                src="https://i.ytimg.com/vi/t9L2hmBngjA/maxresdefault.jpg"
+                                width="100%" height="400px" alt="Slider Image" /></a>
+
                     </div>
                     <div class="header-slider-item">
-                        <a href="http://localhost:3000/chi-tiet/diary-of-a-wimpy-kid-02-rodrick-rules-paperback.25203200.html"><img src="https://i.ytimg.com/vi/dbjj-xB7_eA/maxresdefault.jpg" width="100%" height="400px" alt="Slider Image" /></a>
+                        <a href="http://localhost:3000/chi-tiet/khong-gia-dinh.2141121.html"><img
+                                src="https://cungdocsach.vn/wp-content/uploads/2020/02/Khong-gia-dinh.jpg" width="100%" height="400px"
+                                alt="Slider Image" /></a>
                     </div>
                     <div class="header-slider-item">
-                        <a href="http://localhost:3000/chi-tiet/dung-lua-chon-an-nhan-khi-con-tre.11232442.html"><img src="https://www.tonybuoisangonline.com/wp-content/uploads/2020/03/dung-lua-chon-an-nhan-khi-con-tre-tiki.jpg"  width="100%" height="400px" alt="Slider Image" /></a>
-                        
+                        <a
+                            href="http://localhost:3000/chi-tiet/buoc-duong-cung.406552.html"><img
+                                src="https://reviewsach.net/wp-content/uploads/2020/08/Featured-Picture-B%C6%B0%E1%BB%9Bc-%C4%91%C6%B0%E1%BB%9Dng-c%C3%B9ng-reviewsachonly.jpg" width="100%" height="400px"
+                                alt="Slider Image" /></a>
                     </div>
                     <div class="header-slider-item">
-                        <a href="http://localhost:3000/chi-tiet/khi-moi-diem-tua-deu-mat.14683293.html"><img src="http://file.hstatic.net/1000362347/article/a_cf8289099b8e47d997eb2ff8831afdca_6e2f5b95da4d41dcba1e0ec543e15725_1024x1024.png"  width="100%" height="400px" alt="Slider Image" /></a>
-                        
+                        <a href="http://localhost:3000/chi-tiet/ong-gia-va-bien-ca.80970604.html"><img
+                                src="https://salt.tikicdn.com/ts/tmp/fd/63/d6/f93764ca6f3d3ae1a5a9fac3a5726219.png"
+                                width="100%" height="400px" alt="Slider Image" /></a>
+
                     </div>
                     
+
                 </div>
             </div>
             <div class="col-md-3">
                 <div class="header-img">
                     <div class="img-item">
-                        <img src="/images/om-mo-neo.jpg" />
-                        <a class="img-text" href="http://localhost:3000/chi-tiet/om-mo-neo-nam-mong-nhung-chan-troi.75336309.html">
-                            <p>Bỗng ngày nọ, người nhìn ta khẽ nói:
-
-                                "Những diệu kỳ nằm ở phía xa khơi"
-                                
-                                Chúng mình là tàu bé trong hải cảng
-                                
-                                Ôm mỏ neo nằm mộng những chân trời</p>
+                        <img src="https://sachxuasaigon.com/wp-content/uploads/2020/02/vap-nga.jpg" />
+                        <a class="img-text"
+                            href="http://localhost:3000/chi-tiet/moi-lan-vap-nga-la-mot-lan-truong-thanh.10576548.html">
+                            <p>Trong quá trình này, bạn sẽ khó tránh khỏi vấp ngã, sẽ trải qua nhiều lần đau thương, và sẽ có những lúc bạn cảm thấy vô cùng mỏi mệt, nhưng hãy tin rằng, chỉ có những người đã từng đau thương thì mới trở nên vững vàng hơn.</p>
                         </a>
                     </div>
                     <div class="img-item">
-                        <img src="/images/minh_phai_song.png" />
-                        <a class="img-text" href="http://localhost:3000/chi-tiet/999-la-thu-gui-cho-chinh-minh-mong-ban-tro-thanh-phien-ban-hoan-hao-nhat-p-1-sach-song-ngu.67491400.html">
-                            <p>"Ôi ngay cả phút lòng cô quạnh nhất
-
-                                Chẳng dám mua một vé để đi xa 
-                                
-                                Sợ đến lúc bốn chung quanh là núi 
-                                
-                                Mình sẽ thành trong suốt đến tan ra."</p>
+                        <img src="https://chi.vn/data/files/image-20200714074317-2.jpeg" />
+                        <a class="img-text"
+                            href="http://localhost:3000/chi-tiet/lon-di-thoi-cho-kip-cuoc-doi.32187687.html">
+                            <p>“Bạn không thể lúc nào cũng là người mạnh mẽ, nhưng bạn có thể luôn luôn là người can đảm”</p>
                         </a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div> 
-<!-- Main Slider End -->     
+</div>
+<!-- Main Slider End -->
 
 <!-- Brand Start -->
 <div class="brand">
     <div class="container-fluid">
         <div class="brand-slider">
-            <div class="brand-item"><img src="./images/brand-1.png" height="100px" alt=""></div>
-            <div class="brand-item"><img src="./images/brand-2.png" height="100px" alt=""></div>
-            <div class="brand-item"><img src="./images/brand-3.png" height="100px" alt=""></div>
-            <div class="brand-item"><img src="./images/brand-4.png" height="100px" alt=""></div>
-            <div class="brand-item"><img src="./images/brand-5.png" height="100px" alt=""></div>
-            <div class="brand-item"><img src="./images/brand-6.png" height="100px" alt=""></div>
+            <div class="brand-item"><img src="/images/brand-1.png" height="100px" alt=""></div>
+            <div class="brand-item"><img src="/images/brand-2.png" height="100px" alt=""></div>
+            <div class="brand-item"><img src="/images/brand-3.png" height="100px" alt=""></div>
+            <div class="brand-item"><img src="/images/brand-4.png" height="100px" alt=""></div>
+            <div class="brand-item"><img src="/images/brand-5.png" height="100px" alt=""></div>
+            <div class="brand-item"><img src="/images/brand-6.png" height="100px" alt=""></div>
 
         </div>
     </div>
@@ -146,106 +263,178 @@
 
 <!-- Page Content -->
 <div class="container" style="margin-top:50px;">
-	<div class="row">
+    <div class="row">
         <%data.forEach(function(motphantu){%>
-    	<div class="col-xs-12 col-sm-6 col-md-3">
+        <%price_tiki=motphantu.price_book%>
+        <%list_price_tiki=motphantu.list_price%>
+        <%discount_tiki=motphantu.discount_rate%>
+
+        <%price_fahasa =motphantu.list_produce_fahasa[0].price_book%>
+        <%list_price_fahasa=motphantu.list_produce_fahasa[0].list_price%>
+        <%discount_fahasa=motphantu.list_produce_fahasa[0].discount_rate%>
+
+        <%price_lazada =motphantu.list_produce_lazada[0].price_book%>
+        <%list_price_lazada=motphantu.list_produce_lazada[0].list_price%>
+        <%discount_lazada=motphantu.list_produce_lazada[0].discount_rate%>
+        
+        
+        <div class="col-xs-12 col-sm-6 col-md-3">
             <div class="col-item">
                 <div class="post-img-content">
                     <img src="<%=motphantu.img_book%>" class="img-responsive" />
-                    <span class="round-tag">-<%=motphantu.discount_rate%>%</span>
+                    <% if(price_tiki <=price_fahasa && price_tiki<=price_lazada) {%>
+                        <span class="round-tag">-<%=discount_tiki%>%</span>
+                    <%}%>
+                    <% if(price_fahasa <price_tiki && price_fahasa<price_lazada) {%>
+                        <span class="round-tag">-<%=discount_fahasa%>%</span>
+                    <%}%>
+                    <% if(price_lazada <price_fahasa && price_lazada<price_tiki) {%>
+                        <span class="round-tag">-<%=discount_lazada%>%</span>
+                    <%}%>
                 </div>
                 <div class="info">
                     <div class="name">
-                       <a href="/chi-tiet/<%=motphantu.name_unicode%>.<%=motphantu.id_book%>.html"><span><%=motphantu.name_book%></span> </a>
+                        <a href="/chi-tiet/<%=motphantu.name_unicode%>.<%=motphantu.id_book%>.html"><span><%=motphantu.name_book%></span>
+                        </a>
                     </div>
-                    <div class="row">
-                        <div class="price col-md-6">
-                            <h5 class="price-text-color "><span class='number'><%=motphantu.price_book%></span>₫</h5>
+                    <% if(price_tiki <=price_fahasa && price_tiki <=price_lazada) {%>
+                        <div class="row">
+                            <div class="price col-md-6">
+                                <h5 class="price-text-color "><span class='number'><%=price_tiki%></span>₫</h5>
+                            </div>
+                            <div class="price col-md-6">
+                                <span class="list-price-text"><span
+                                        class='number text'><%=list_price_tiki%></span>₫</span>
+                            </div>
+                            <div class="separator clear-left">
+                                <p class="btn-add">
+                                    <img src="https://img.websosanh.vn/v2/users/logo/images/53mjoSwxCgpn.jpg?compress=85&width=50&height=30"
+                                        alt="Tiki">
+                                </p>
+                                <p class="btn-details">
+                                    <a href="/category/<%=motphantu.category_unicode%>.<%=motphantu.cat_id%>.html"
+                                        class="hidden-sm"><%=motphantu.category%></a>
+                                </p>
+                            </div>
                         </div>
-                       
-                    </div>
-                    <div class="separator clear-left">
-                        <p class="btn-add">
-                            <i class="fa fa-shopping-cart"></i><a href="/chi-tiet/<%=motphantu.name_unicode%>.<%=motphantu.id_book%>.html" class="hidden-sm">See Ebook</a></p>
-                        <p class="btn-details">
-                            <a href="/category/<%=motphantu.category_unicode%>.<%=motphantu.cat_id%>.html" class="hidden-sm"><%=motphantu.category%></a></p>
-                    </div>
-                    <div class="clearfix">
-                    </div>
+                    <%}%>
+                    <% if(price_fahasa <price_tiki && price_fahasa <price_lazada) {%>
+                        <div class="row">
+                            <div class="price col-md-6">
+                                <h5 class="price-text-color "><span class='number'><%=price_fahasa%></span>₫</h5>
+                            </div>
+                            <div class="price col-md-6">
+                                <span class="list-price-text"><span
+                                        class='number text'><%=list_price_fahasa%></span>₫</span>
+                            </div>
+                            <div class="separator clear-left">
+                                <p class="btn-add">
+                                    <img src="https://jobseekers.vn/wp-content/uploads/2019/05/Quy-Chuan-Logo.png"lt="fahasa" class='img_fahasa'>
+                                </p>
+                                <p class="btn-details">
+                                    <a href="/category/<%=motphantu.category_unicode%>.<%=motphantu.cat_id%>.html"
+                                        class="hidden-sm"><%=motphantu.category%></a>
+                                </p>
+                            </div>
+                        </div>
+                    <%}%>
+                    <% if(price_lazada <price_tiki && price_lazada <price_fahasa) {%>
+                        <div class="row">
+                            <div class="price col-md-6">
+                                <h5 class="price-text-color "><span class='number'><%=price_lazada%></span>₫</h5>
+                            </div>
+                            <div class="price col-md-6">
+                                <span class="list-price-text"><span
+                                        class='number text'><%=list_price_lazada%></span>₫</span>
+                            </div>
+                            <div class="separator clear-left">
+                                <p class="btn-add">
+                                    <img src="/images/lazada.png"lt="lazada" class='img_lazada'>
+                                </p>
+                                <p class="btn-details">
+                                    <a href="/category/<%=motphantu.category_unicode%>.<%=motphantu.cat_id%>.html"
+                                        class="hidden-sm"><%=motphantu.category%></a>
+                                </p>
+                            </div>
+                        </div>
+                    <%}%>
+
+                   
+
                 </div>
             </div>
         </div>
         <%})%>
-	</div>
+    </div>
     <nav aria-label="Page navigation example">
         <ul class="pagination" style="padding-left: 300px;margin-top: -4px;">
             <%if (currentpage==1) {%>
-                <li class="page-item disabled"><a class="page-link" href="#" tabindex="-1">Previous</a></li>
-                <li class="page-item  active "><a class="page-link" href="?page=1"> 1</a></li>
-                <li class="page-item "><a class="page-link" href="?page=2"> 2</a></li>
-                <li class="page-item "><a class="page-link" href="?page=3"> 3</a></li>
-                <li class="page-item "><a class="page-link" href="?page=3"> 4</a></li>
-                <li class="page-item "><a class="page-link" href="?page=5"> 5</a></li>
-                <li class="page-item "><a class="page-link" href="?page=6"> 6</a></li>
-                <li class="page-item "><a class="page-link" href="?page=7"> 7</a></li>
+            <li class="page-item disabled"><a class="page-link" href="#" tabindex="-1">Previous</a></li>
+            <li class="page-item  active "><a class="page-link" href="?page=1"> 1</a></li>
+            <li class="page-item "><a class="page-link" href="?page=2"> 2</a></li>
+            <li class="page-item "><a class="page-link" href="?page=3"> 3</a></li>
+            <li class="page-item "><a class="page-link" href="?page=3"> 4</a></li>
+            <li class="page-item "><a class="page-link" href="?page=5"> 5</a></li>
+            <li class="page-item "><a class="page-link" href="?page=6"> 6</a></li>
+            <li class="page-item "><a class="page-link" href="?page=7"> 7</a></li>
             <%}%>
     
             <%if (currentpage>1) {%>
-                <li class="page-item "><a class="page-link" href="?page=<%=previous%>">Previous</a></li>
+            <li class="page-item "><a class="page-link" href="?page=<%=previous%>">Previous</a></li>
             <%}%>
     
             <%if (currentpage==2) {%>
-                <li class="page-item   "><a class="page-link" href="?page=1"> 1</a></li>
-                <li class="page-item active "><a class="page-link" href="?page=2"> 2</a></li>
-                <li class="page-item "><a class="page-link" href="?page=3"> 3</a></li>
-                <li class="page-item "><a class="page-link" href="?page=4"> 4</a></li>
+            <li class="page-item   "><a class="page-link" href="?page=1"> 1</a></li>
+            <li class="page-item active "><a class="page-link" href="?page=2"> 2</a></li>
+            <li class="page-item "><a class="page-link" href="?page=3"> 3</a></li>
+            <li class="page-item "><a class="page-link" href="?page=4"> 4</a></li>
             <%}%>
     
             <%if (currentpage==3) {%>
-                    <li class="page-item   "><a class="page-link" href="?page=1"> 1</a></li>
-                    <li class="page-item "><a class="page-link" href="?page=2"> 2</a></li>
-                    <li class="page-item active "><a class="page-link" href="?page=3"> 3</a></li>
-             <%}%>
+            <li class="page-item   "><a class="page-link" href="?page=1"> 1</a></li>
+            <li class="page-item "><a class="page-link" href="?page=2"> 2</a></li>
+            <li class="page-item active "><a class="page-link" href="?page=3"> 3</a></li>
+            <%}%>
     
             <%if (currentpage > 3 ) {%>
-                <li class="page-item "><a class="page-link" href="?page=1"> 1</a></li>
-                <li class="page-item "><a class="page-link" href="?page=2"> 2</a></li>
-                <li class="page-item "><a class="page-link" href="?page=3"> 3</a></li>
+            <li class="page-item "><a class="page-link" href="?page=1"> 1</a></li>
+            <li class="page-item "><a class="page-link" href="?page=2"> 2</a></li>
+            <li class="page-item "><a class="page-link" href="?page=3"> 3</a></li>
             <%}%>
     
             <%if (currentpage > 4 ) {%>
-                <li class="page-item "><a class="page-link" href="#">...</a></li>
+            <li class="page-item "><a class="page-link" href="#">...</a></li>
             <%}%>
         
             <% for(code=4;code<=max_page;code++){%>
-                <%if (code!=currentpage) {%>
-                    <%if (code>currentpage-2 && code<currentpage+2) {%>
-                    <li class="page-item"><a class="page-link" href="?page=<%=code%>"> <%=code%></a></li>
-                    <%}%>
-                <%}%>
-    
-                <%if (code==currentpage) {%>
-                    <li class="page-item active"><a class="page-link" href="?page=<%=code%>"> <%=currentpage%></a></li>
-                <%}%>
+            <%if (code!=currentpage) {%>
+            <%if (code>currentpage-2 && code<currentpage+2) {%>
+            <li class="page-item"><a class="page-link" href="?page=<%=code%>"> <%=code%></a></li>
             <%}%>
-    
+                <%}%>
+
+            <%if (code==currentpage) {%>
+            <li class="page-item active"><a class="page-link" href="?page=<%=code%>"> <%=currentpage%></a></li>
+            <%}%>
+            <%}%>
+
             <%if (currentpage < max_page-3 ) {%>
-                <li class="page-item "><a class="page-link" href="#">...</a></li>
+            <li class="page-item "><a class="page-link" href="#">...</a></li>
             <%}%>
     
             <%if (currentpage < max_page-2 ) {%>
-                <li class="page-item "><a class="page-link" href="?page=<%=max_page-1%>"> <%=max_page-1%></a></li>
+            <li class="page-item "><a class="page-link" href="?page=<%=max_page-1%>"> <%=max_page-1%></a></li>
             <%}%>
             <%if (currentpage < max_page-1 ) {%>
-    
-                <li class="page-item "><a class="page-link" href="?page=<%=max_page%>"> <%=max_page%></a></li>
+
+            <li class="page-item "><a class="page-link" href="?page=<%=max_page%>"> <%=max_page%></a></li>
             <%}%>
         
             <% if(currentpage < max_page){%>
-                <li class="page-item "><a class="page-link" href="?page=<%=next%>" tabindex="-1">Next</a></li>
+            <li class="page-item "><a class="page-link" href="?page=<%=next%>" tabindex="-1">Next</a></li>
             <%}%>
             <% if(currentpage==max_page){%>
-                <li class="page-item disabled"><a class="page-link" href="#" tabindex="-1">Next </a></li>
+            <li class="page-item disabled"><a class="page-link" href="#" tabindex="-1">Next </a></li>
             <%}%>
     
         </ul>

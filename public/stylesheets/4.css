@@ -1,0 +1,126 @@
+
+.gia1 {
+    width: 33.33%;
+    float: left;
+}
+.gia2 {
+    width: 33.33%;
+    float: left;
+}
+.gia3 {
+    width: 33.33%;
+    float: left;
+}
+.description {
+    clear: both;
+    font-size: 18px;
+}
+.gia1 img {
+   
+    height: 80px;
+}
+.gia1 img {
+    height: 80px;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+.gia2 img {
+    height: 80px;
+    width: 226px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+.gia3 img {
+    height: 80px;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+.price_book {
+    width: 50%;
+    float: left;
+}
+.old_price {
+    width: 50%;
+    float: left;
+    margin-left: -26px;
+}
+
+.sell_produce {
+    
+    clear: both;
+    padding-top: 5px;
+    padding-bottom: 15px;
+    font-size: 19px;
+    font-family: 'Roboto Slab';
+    text-align: center;
+}
+span.number.old_price {
+    font-size: 17px;
+    color: black;
+    text-decoration-line: line-through;
+    padding-top: 4px;
+    padding-left: 11px;
+}
+
+span.sell-produce {
+    background: #2980b9;
+    color: white;
+    border: 5px solid #2980b9;
+    border-radius: 12px;
+}
+span.number {
+    color: #e74c3c;
+    font-size: 24px;
+    font-family: 'Roboto Slab';
+    font-weight: 600;
+    padding-left: 43px;
+    width: 95%;
+    float: left;
+    text-align: right;
+}
+
+span.d {
+    width: 5%;
+    float: right;
+    font-size: 20;
+    color: blue;
+    font-size: 25px;
+    font-weight: bold;
+    padding-top: -5px;
+    margin-top: -6px;
+    padding-left: 5px;
+}
+span.d_old {
+    color: blue;
+}
+.price_product {
+    height: 35px;
+}
+span.rate {
+    width: 60px;
+    height: 60px;
+    margin-top: -103px;
+    margin-left: 244px;
+    border-radius: 100% 100% 100% 100%;
+    border: 4px solid #FFF;
+    background: #37A12B;
+    position: absolute;
+    padding: 13px 6px;
+    font-size: 17px;
+    color: #FFF;
+    font-weight: bold;
+}
+.product-card .author {
+    font-size: 22px;
+    font-weight: bold;
+    /* padding: 0; */
+    color: #e67e22;
+    /* text-transform: capitalize; */
+    display: block;
+    margin-bottom: 5px;
+}

@@ -1,0 +1,219 @@
+
+
+img.tiki {
+    /* width: 200px; */
+    height: 100px;
+}
+
+.price-block-tiki {
+    padding-top: -33px;
+    margin-top: -18px;
+}
+
+
+
+.product-card .author {
+    font-size: 21px;
+    font-weight: 400;
+    padding: 0;
+    color: #333;
+    text-transform: capitalize;
+    display: block;
+    margin-bottom: 5px;
+}
+.name span {
+    text-align: justify;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    color: red;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+
+
+.sellfahasa {
+    padding-left: 172px;
+}
+.selllazada {
+    padding-left: 616px;
+    padding-top: 8px;
+}
+
+
+.selltiki {
+    padding-left: 30px;
+    /* padding-top: 3px; */
+    margin-top: 5px;
+}
+
+.sellfahasa {
+    padding-left: 172px;
+    padding-top: 5px;
+}
+
+img.img-responsive.fahasa {
+    padding-left: 166px;
+    margin-top: -42px;
+    /* padding-top: 39px; */
+}
+.price-discount-tiki {
+    margin-top: -109px;
+    margin-left: 127px;
+    width: 50px;
+    height: 50px;
+    border-radius: 100% 50% 100% 100%;
+    border: 5px solid #FFF;
+    background: #0e66f2;
+    position: absolute;
+    /* bottom: 135px; */
+    /* right: -2px; */
+    padding-top: -150px;
+    padding: 8px 2px;
+    font-size: 17px;
+    color: #FFF;
+    font-weight: bold;
+}
+.price-discount-fahasa {
+    margin-top: -105px;
+    margin-left: 323px;
+    width: 50px;
+    height: 50px;
+    border-radius: 100% 50% 100% 100%;
+    border: 4px solid #FFF;
+    background: #e63949;
+    position: absolute;
+    /* bottom: 135px; */
+    /* right: -2px; */
+    padding-top: -150px;
+    padding: 8px 2px;
+    font-size: 17px;
+    color: #FFF;
+    font-weight: bold;
+}
+
+.fahasa {
+    padding-left: 140px;
+    height: 30px;
+    padding-top: -50px;
+    margin-top: -70px;
+}
+.lazada {
+    padding-top: -20px;
+    margin-top: -6px;
+}
+
+.price-block-fahasa {
+    padding-left: -4px;
+    margin-top: -12px;
+}
+a.sell_tiki {
+    padding-left: 4px;
+    font-size: 18px;
+}
+span.price-tiki {
+    color: #e74c3c;
+    font-weight: bold;
+}
+span.number {
+    color: #e74c3c;
+    font-size: 24px;
+    font-family: 'Roboto Slab';
+    font-weight: 600;
+}
+del.price-old-tiki {
+    padding-left: 12px;
+}
+span.number.list_price-tiki {
+    font-size: 17px;
+    text-decoration-line: line-through;
+    color: #3498db;
+}
+span.number.list_price-fahasa {
+    font-size: 17px;
+    color: #2980b9;
+    text-decoration-line: line-through;
+    padding-left: 18px;
+}
+.price-block-fahasa {
+    padding-left: -4px;
+    margin-top: -3px;
+}
+a.sell_fahasa {
+    padding-left: 4px;
+    font-size: 18px;
+}
+span.number.list_price-lazada {
+    font-size: 17px;
+    color: #2980b9;
+    text-decoration-line: line-through;
+    padding-left: 18px;
+}
+
+img.lazada {
+    height: 37px;
+    padding-left: 618px;
+    margin-top: -111px;
+}
+.price-block-lazada {
+    padding-left: 591px;
+    margin-top: -27px;
+}
+a.sell_lazada {
+    padding-left: 20px;
+    font-size: 18px;
+}
+
+.row_product {
+    width: 800px;
+    height: 100px;
+}
+.row1_product {
+    width: 33%;
+}
+.row2_product {
+    width: 33%;
+}
+.row3_product {
+    width: 33%;
+}
+.fahasa {
+    padding-left: 160px;
+    height: 30px;
+    padding-top: -50px;
+    margin-top: -70px;
+}
+.lazada {
+    padding-top: -20px;
+    margin-top: -6px;
+    padding-left: 50px;
+}
+.price-discount-lazada {
+    margin-top: -108px;
+    margin-left: 148px;
+    width: 50px;
+    height: 50px;
+    border-radius: 100% 50% 100% 100%;
+    border: 4px solid #FFF;
+    background: #56b612;
+    position: absolute;
+    padding: 8px 2px;
+    font-size: 17px;
+    color: #FFF;
+    font-weight: bold;
+}
+.price-block-lazada {
+    padding-left: 571px;
+    margin-top: -27px;
+}
+.selllazada {
+    padding-left: 616px;
+    padding-top: 8px;
+}
+a.sell_lazada {
+    padding-left: 32px;
+    font-size: 18px;
+}

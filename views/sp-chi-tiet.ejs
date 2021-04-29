@@ -31,6 +31,8 @@
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
     <link href="/stylesheets/itemshop.css" rel="stylesheet">
     <link href="/stylesheets/2.css" rel="stylesheet">
+    <link href="/stylesheets/4.css" rel="stylesheet">
+    
 
     <!-- font google -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -129,13 +131,26 @@
                 <ul>
                     <li class="name"><a class='link' href="/">Trang chủ</a></li>
                     <li class="angle-right"> <i class="fa fa-angle-right" aria-hidden="true"></i></li>
-                    <li class="name"><a class='link' href="/"><%=data.source%></a></li>
-                    <li class="angle-right"> <i class="fa fa-angle-right" aria-hidden="true"></i></li>
                     <li class="name"><a class='link' href="/"><%=data.category%></a></li>
                 </ul>
 
             </div>
         </div>
+        <%price_tiki=data.price_book%>
+        <%list_price_tiki=data.list_price%>
+        <%discount_tiki=data.discount_rate%>
+        <%link_tiki=data.link_book%>
+
+        <%price_fahasa =data.list_produce_fahasa[0].price_book%>
+        <%list_price_fahasa=data.list_produce_fahasa[0].list_price%>
+        <%discount_fahasa=data.list_produce_fahasa[0].discount_rate%>
+        <%link_fahasa=data.list_produce_fahasa[0].link_book%>
+
+        <%price_lazada =data.list_produce_lazada[0].price_book%>
+        <%list_price_lazada=data.list_produce_lazada[0].list_price%>
+        <%discount_lazada=data.list_produce_lazada[0].discount_rate%>
+        <%link_lazada=data.list_produce_lazada[0].link_book%>
+        
 		<main class="inner-page-sec-padding-bottom">
 			<div class="container">
 				<div class="shop-product-wrap list with-pagination row space-db--30 shop-border">
@@ -144,25 +159,90 @@
 							
 							<div class="product-list-content">
 								<div class="card-image">
-									<img src="<%=data.img_book%>" alt="<%=data.name_book%>">
+									<img src="<%=data.img_book%>" alt="<%=data.name_book%> " class='imgsp'>
 								</div>
 								<div class="product-card--body">
 									<div class="product-header">
                                         
-                                        <a href="/author/<%=data.author_unicode%>.<%=data.id_author%>.html" class="author">
+                                        <a href="/author/<%=data.author_unicode%>.html" class="author">
                                             <%=data.name_author%>
+                                            <%=data.name_auhtor%>
                                         </a>
                                         
-										<h3><a href="<%=data.link_book%>" tabindex="0"><%=data.name_book%></a></h3>
+										<h2><a href="#" tabindex="0"><%=data.name_book%></a></h2>
+                                        <hr style='width:10px; color:black;'>
 									</div>
-									<div class="price-block">
-										<span class="price "><span class="number"><%=data.price_book%></span>₫</span>
-										<del class="price-old ">
-                                            <span class='number list_price'><%=data.list_price%></span>₫
-                                    </del>
+                                    
+                                    <div class="giasp">
+                                        <%if(price_tiki<=price_fahasa & price_tiki<=price_lazada) {%>
+                                            <div class="gia1">
+                                                <% include theme/phanloai/tiki %>
+                                            </div>
+                                            <%if(price_fahasa<=price_lazada) {%>
+                                                <div class="gia2">
+                                                    <% include theme/phanloai/fahasa %>    
+                                                </div>
+                                                <div class="gia3">
+                                                    <% include theme/phanloai/lazada %>
+                                                </div>
+                                            <%}%>
+                                            <%if(price_lazada<price_fahasa){%>
+                                                <div class="gia2">
+                                                    <% include theme/phanloai/lazada %>    
+                                                </div>
+                                                <div class="gia3">
+                                                    <% include theme/phanloai/fahasa %>
+                                                </div>
+                                            <%}%>
+                                        <%}%>
+
+                                        <%if(price_fahasa < price_tiki & price_fahasa<=price_lazada) {%>
+                                            <div class="gia1">
+                                                <% include theme/phanloai/fahasa %>
+                                            </div>
+                                            <%if(price_tiki<=price_lazada) {%>
+                                                <div class="gia2">
+                                                    <% include theme/phanloai/tiki %>    
+                                                </div>
+                                                <div class="gia3">
+                                                    <% include theme/phanloai/lazada %>
+                                                </div>
+                                            <%}%>
+                                            <%if(price_lazada<price_tiki){%>
+                                                <div class="gia2">
+                                                    <% include theme/phanloai/lazada %>    
+                                                </div>
+                                                <div class="gia3">
+                                                    <% include theme/phanloai/tiki %>
+                                                </div>
+                                            <%}%>
+                                        <%}%>
+
+                                        <%if(price_lazada < price_tiki & price_lazada<=price_fahasa) {%>
+                                            <div class="gia1">
+                                                <% include theme/phanloai/lazada %>
+                                            </div>
+                                            <%if(price_tiki<=price_fahasa) {%>
+                                                <div class="gia2">
+                                                    <% include theme/phanloai/tiki %>    
+                                                </div>
+                                                <div class="gia3">
+                                                    <% include theme/phanloai/fahasa %>
+                                                </div>
+                                            <%}%>
+                                            <%if(price_fahasa<price_tiki){%>
+                                                <div class="gia2">
+                                                    <% include theme/phanloai/fahasa %>    
+                                                </div>
+                                                <div class="gia3">
+                                                    <% include theme/phanloai/tiki %>
+                                                </div>
+                                            <%}%>
+                                        <%}%>
+                                    </div>
                                         
-										<span class="price-discount"><%=data.discount_rate%>%</span>
-									</div>
+
+                                    
                                     <div class="description">
                                         <span><%-data.description%></span>
                                     </div>
@@ -173,11 +253,6 @@
 										<span class="fas fa-star star_on"></span>
 										<span class="fas fa-star star_on"></span>
 										<span class="fas fa-star "></span>
-									</div>
-									<div class="btn-block">
-										<a href="<%=data.link_book%>" class="btn btn-outlined">Mua Ngay</a>
-										<a href="/search/?searchText=<%=data.name_unicode%>" class="card-link"><i class="fa fa-search" aria-hidden="true"></i> So Sánh Giá</a>
-										<a href="/category/<%=data.category_unicode%>.html" class="card-link"><i class="fa fa-list-ul" aria-hidden="true"></i> <%=data.category%></a>
 									</div>
 								</div>
 							</div>

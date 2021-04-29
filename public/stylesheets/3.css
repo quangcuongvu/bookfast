@@ -12,3 +12,8 @@ a.nav-link.menu {
     color: blue;
     padding-bottom: 10px;
 }
+.separator.clear-left.bar {
+    border-top: 3px solid #b2bec3;
+    width: 220px;
+    margin-left: -10px;
+}

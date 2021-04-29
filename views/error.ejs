@@ -2,7 +2,23 @@
 <% include theme/header %>  
 
 <% if (message=404) {%>
-    <h1>Trang này hiện không tồn tại</h1>
-    <h2> Mời bạn quay lại trang chủ</h2>
+    <img src="/images/error.png" alt="">
+    <div class="error">
+        <div class="thongbao" style='
+   
+        padding-left: 25%;
+        font-size: 30px;
+        padding-bottom: 90px;
+        padding-top: 5px;
+        '>
+            <div class="back" style="padding-left: 50px;
+            padding-top: 20px;">
+                <h2><a href="/"><i class="fa fa-home" aria-hidden="true"></i> Mời bạn quay lại trang chủ</a></h2>
+            </div>
+        </div>
+
+    </div>
+    
 <%}%>
 
+<% include theme/footer %>  
